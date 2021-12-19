@@ -1,25 +1,17 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
-  <sitemap>
-    <loc>https://goldengaco.github.io/en/sitemap.xml</loc>
-    
-      <lastmod>2021-12-16T12:00:37-07:00</lastmod>
-    
-  </sitemap>
+  <url>
+    <loc>https://localhost/categories/</loc>
+  </url>
   
-  <sitemap>
-    <loc>https://goldengaco.github.io/zh-cn/sitemap.xml</loc>
-    
-      <lastmod>2021-12-16T12:00:37-07:00</lastmod>
-    
-  </sitemap>
+  <url>
+    <loc>https://localhost/</loc>
+  </url>
   
-  <sitemap>
-    <loc>https://goldengaco.github.io/fr/sitemap.xml</loc>
-    
-      <lastmod>2021-12-16T12:00:37-07:00</lastmod>
-    
-  </sitemap>
+  <url>
+    <loc>https://localhost/tags/</loc>
+  </url>
   
-</sitemapindex>
+</urlset>
