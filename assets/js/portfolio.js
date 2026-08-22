@@ -187,6 +187,16 @@ function initInteractiveTerminal() {
 <div class="terminal-line">Memory: 4.2 GiB / 32 GiB (13% utilized)</div>
 <div class="terminal-line">Status: <span style="color: #10b981; font-weight: bold;">ALL SYSTEMS OPERATIONAL (99.99%)</span></div>`,
 
+    certs: () => `
+<div class="terminal-line"><span style="color: #00e5ff;">=== CERTIFICACIONES & CREDENCIALES ===</span></div>
+<div class="terminal-line">• <span style="color: #38bdf8; font-weight: bold;">Google Cloud Platform (GCP) Infrastructure & Security</span></div>
+<div class="terminal-line">• <span style="color: #38bdf8; font-weight: bold;">Linux System Administration (RHEL / Debian)</span></div>
+<div class="terminal-line">• <span style="color: #38bdf8; font-weight: bold;">PostgreSQL DBA Enterprise & Performance Tuning</span></div>
+<div class="terminal-line">• <span style="color: #38bdf8; font-weight: bold;">MuleSoft Anypoint Platform Operations</span></div>
+<div class="terminal-line"><em>Explora la sección visual de Certificaciones en la página para más detalles.</em></div>`,
+
+    certificaciones: () => terminalCommands.certs(),
+
     sudo: () => `<div class="terminal-line" style="color: #f43f5e;">carlos is already in sudoers file. Incident reported to Santa Claus 🎅.</div>`,
     
     clear: () => {

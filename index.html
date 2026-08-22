@@ -8,7 +8,7 @@
   <title>Carlos García | Senior Infrastructure & DBA Engineer | Cloud & DevSecOps</title>
   <meta name="title" content="Carlos García | Senior Infrastructure & DBA Engineer | Cloud & DevSecOps">
   <meta name="description" content="Portafolio profesional de Carlos García. Especialista en Administración de Servidores Linux/Windows, DBA Multi-motor (PostgreSQL, SQL Server, MySQL, Informix, Netezza), Cloud (GCP/MuleSoft) y Automatización.">
-  <meta name="keywords" content="Carlos Garcia, SysAdmin, DBA, PostgreSQL, SQL Server, Linux, GCP, MuleSoft, DevSecOps, Python, Bash, Rust, Docker, Administrador de Servidores">
+  <meta name="keywords" content="Carlos Garcia, SysAdmin, DBA, PostgreSQL, SQL Server, Linux, GCP, MuleSoft, DevSecOps, Python, Bash, Rust, Docker, Administrador de Servidores, Certificaciones">
   <meta name="author" content="Carlos Javier García Contreras">
   <meta name="theme-color" content="#0a0e17">
 
@@ -64,6 +64,7 @@
         <li><a href="#especialidades" class="nav-link">Especialidades</a></li>
         <li><a href="#habilidades" class="nav-link">Habilidades</a></li>
         <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
+        <li><a href="#certificaciones" class="nav-link">Certificaciones</a></li>
         <li><a href="#experiencia" class="nav-link">Trayectoria</a></li>
         <li><a href="#contacto" class="nav-link">Contacto</a></li>
       </ul>
@@ -128,12 +129,8 @@
         <div class="hero-avatar-wrapper">
           <picture class="avatar-frame">
             <source srcset="images/pic00.webp" type="image/webp">
-            <img src="images/pic00.jpg" alt="Fotografía de perfil de Carlos García, SysAdmin y Administrador de Bases de Datos" class="avatar-img" width="180" height="180" fetchpriority="high">
+            <img src="images/pic00.jpg" alt="Fotografía de perfil de Carlos García, SysAdmin y Administrador de Bases de Datos" class="avatar-img" width="175" height="175" fetchpriority="high">
           </picture>
-          <div class="avatar-badge-float">
-            <i class="fas fa-shield-halved" aria-hidden="true"></i>
-            <span class="avatar-badge-sub">99.99% Uptime</span>
-          </div>
         </div>
       </div>
     </div>
@@ -160,6 +157,7 @@
               <button class="terminal-quick-btn" data-cmd="help" aria-label="Ejecutar comando help">help</button>
               <button class="terminal-quick-btn" data-cmd="skills" aria-label="Ejecutar comando skills">skills</button>
               <button class="terminal-quick-btn" data-cmd="projects" aria-label="Ejecutar comando projects">projects</button>
+              <button class="terminal-quick-btn" data-cmd="certs" aria-label="Ejecutar comando certs">certs</button>
               <button class="terminal-quick-btn" data-cmd="uptime" aria-label="Ejecutar comando uptime">uptime</button>
               <button class="terminal-quick-btn" data-cmd="clear" aria-label="Limpiar consola de terminal">clear</button>
             </div>
@@ -167,12 +165,12 @@
           <div class="terminal-body" id="terminalBody">
             <div id="terminalOutput">
               <div class="terminal-line"><span style="color: #38bdf8;">Bienvenido al entorno interactivo de Carlos García.</span></div>
-              <div class="terminal-line">Escribe <span style="color: #00e5ff; font-weight: bold;">help</span> o pulsa los botones superiores para explorar comandos rápidos.</div>
+              <div class="terminal-line">Escribe <span style="color: #00e5ff; font-weight: bold;">help</span>, <span style="color: #00e5ff; font-weight: bold;">skills</span> o <span style="color: #00e5ff; font-weight: bold;">certs</span> para explorar comandos rápidos.</div>
               <div class="terminal-line" style="color: var(--text-dim);">Sistema: Linux x86_64 | Kernel: 6.8.0-enterprise | Security: Hardened</div>
             </div>
             <div class="terminal-input-row">
               <span class="terminal-prompt" aria-hidden="true">carlos@devops-node:~$</span>
-              <input type="text" id="terminalInput" class="terminal-input" placeholder="Escribe un comando (ej: help, skills, whoami)..." autocomplete="off" spellcheck="false" aria-label="Entrada de comandos de terminal">
+              <input type="text" id="terminalInput" class="terminal-input" placeholder="Escribe un comando (ej: help, skills, certs, whoami)..." autocomplete="off" spellcheck="false" aria-label="Entrada de comandos de terminal">
             </div>
           </div>
         </div>
@@ -215,11 +213,11 @@
 
           <div class="stat-card">
             <div class="stat-icon" aria-hidden="true">
-              <i class="fas fa-bolt"></i>
+              <i class="fas fa-certificate"></i>
             </div>
             <div>
-              <div class="stat-value">99.99%</div>
-              <div class="stat-label">Continuidad Operativa & DRP</div>
+              <div class="stat-value">Certificado</div>
+              <div class="stat-label">Cloud, Linux & Bases de Datos</div>
             </div>
           </div>
         </div>
@@ -363,7 +361,7 @@
       </div>
     </section>
 
-    <!-- Tech Stack & Skills Matrix Section -->
+    <!-- Tech Stack & Skills Matrix (Senior Competencies - Sin Porcentajes) -->
     <section class="skills-section" id="habilidades">
       <div class="container">
         <div class="section-header">
@@ -372,7 +370,7 @@
           </div>
           <h2 class="section-title">Matriz de Habilidades & Tecnologías</h2>
           <p class="section-subtitle">
-            Dominio práctico en sistemas operativos, bases de datos relacionales/analíticas, middleware y lenguajes de scripting.
+            Competencias prácticas y experiencia de campo demostrada en sistemas operativos, motores de bases de datos, middleware y automatización.
           </p>
         </div>
 
@@ -404,8 +402,13 @@
                 <div class="skill-category-tag">Servidores & Kernel</div>
               </div>
             </div>
-            <div class="skill-bar-bg" aria-hidden="true"><div class="skill-bar-fill" style="width: 95%;"></div></div>
-            <div class="skill-card-footer"><span>Nivel: Avanzado / Enterprise</span><span>95%</span></div>
+            <div class="tags-container">
+              <span class="tech-tag">Hardening</span>
+              <span class="tech-tag">Permisos & SSH</span>
+              <span class="tech-tag">Logs Forensics</span>
+              <span class="tech-tag">DRP</span>
+              <span class="tech-tag">Systemd</span>
+            </div>
           </div>
 
           <!-- Windows Server -->
@@ -417,8 +420,12 @@
                 <div class="skill-category-tag">Active Directory & IIS</div>
               </div>
             </div>
-            <div class="skill-bar-bg" aria-hidden="true"><div class="skill-bar-fill" style="width: 90%;"></div></div>
-            <div class="skill-card-footer"><span>Nivel: Avanzado</span><span>90%</span></div>
+            <div class="tags-container">
+              <span class="tech-tag">Active Directory</span>
+              <span class="tech-tag">IIS Web Server</span>
+              <span class="tech-tag">GPO & Roles</span>
+              <span class="tech-tag">Event Viewer</span>
+            </div>
           </div>
 
           <!-- PostgreSQL -->
@@ -430,8 +437,13 @@
                 <div class="skill-category-tag">DBA, Tuning & HA</div>
               </div>
             </div>
-            <div class="skill-bar-bg" aria-hidden="true"><div class="skill-bar-fill" style="width: 95%;"></div></div>
-            <div class="skill-card-footer"><span>Nivel: Experto</span><span>95%</span></div>
+            <div class="tags-container">
+              <span class="tech-tag">Query Tuning</span>
+              <span class="tech-tag">Replicación Streaming</span>
+              <span class="tech-tag">Index Tuning</span>
+              <span class="tech-tag">PgBouncer</span>
+              <span class="tech-tag">Vacuuming</span>
+            </div>
           </div>
 
           <!-- SQL Server -->
@@ -443,8 +455,12 @@
                 <div class="skill-category-tag">T-SQL, Mantenimiento, Tuning</div>
               </div>
             </div>
-            <div class="skill-bar-bg" aria-hidden="true"><div class="skill-bar-fill" style="width: 90%;"></div></div>
-            <div class="skill-card-footer"><span>Nivel: Avanzado</span><span>90%</span></div>
+            <div class="tags-container">
+              <span class="tech-tag">Execution Plans</span>
+              <span class="tech-tag">Jobs & Agentes</span>
+              <span class="tech-tag">Backup / Restore</span>
+              <span class="tech-tag">Mantenimiento</span>
+            </div>
           </div>
 
           <!-- MySQL -->
@@ -456,8 +472,11 @@
                 <div class="skill-category-tag">Replicación & Queries</div>
               </div>
             </div>
-            <div class="skill-bar-bg" aria-hidden="true"><div class="skill-bar-fill" style="width: 90%;"></div></div>
-            <div class="skill-card-footer"><span>Nivel: Avanzado</span><span>90%</span></div>
+            <div class="tags-container">
+              <span class="tech-tag">Replicación Master-Slave</span>
+              <span class="tech-tag">InnoDB Tuning</span>
+              <span class="tech-tag">Slow Query Logs</span>
+            </div>
           </div>
 
           <!-- Informix & Netezza -->
@@ -469,8 +488,12 @@
                 <div class="skill-category-tag">Bases de Datos Enterprise</div>
               </div>
             </div>
-            <div class="skill-bar-bg" aria-hidden="true"><div class="skill-bar-fill" style="width: 85%;"></div></div>
-            <div class="skill-card-footer"><span>Nivel: Especialista</span><span>85%</span></div>
+            <div class="tags-container">
+              <span class="tech-tag">Data Warehousing</span>
+              <span class="tech-tag">ETL Masivo</span>
+              <span class="tech-tag">Migración Heterogénea</span>
+              <span class="tech-tag">Onstat</span>
+            </div>
           </div>
 
           <!-- Google Cloud Platform -->
@@ -482,8 +505,12 @@
                 <div class="skill-category-tag">Infraestructura & Hardening</div>
               </div>
             </div>
-            <div class="skill-bar-bg" aria-hidden="true"><div class="skill-bar-fill" style="width: 88%;"></div></div>
-            <div class="skill-card-footer"><span>Nivel: Avanzado</span><span>88%</span></div>
+            <div class="tags-container">
+              <span class="tech-tag">Compute Engine</span>
+              <span class="tech-tag">VPC & Firewall</span>
+              <span class="tech-tag">IAM Security</span>
+              <span class="tech-tag">Hardening Checklists</span>
+            </div>
           </div>
 
           <!-- MuleSoft Anypoint -->
@@ -495,8 +522,12 @@
                 <div class="skill-category-tag">vCores, Forense & Diagnóstico</div>
               </div>
             </div>
-            <div class="skill-bar-bg" aria-hidden="true"><div class="skill-bar-fill" style="width: 90%;"></div></div>
-            <div class="skill-card-footer"><span>Nivel: Especialista</span><span>90%</span></div>
+            <div class="tags-container">
+              <span class="tech-tag">Runtime Manager</span>
+              <span class="tech-tag">vCore FinOps</span>
+              <span class="tech-tag">Diagnóstico DNS/TCP</span>
+              <span class="tech-tag">Audit Logs</span>
+            </div>
           </div>
 
           <!-- Nginx / Apache / Tomcat -->
@@ -508,8 +539,12 @@
                 <div class="skill-category-tag">Reverse Proxy, SSL & Routing</div>
               </div>
             </div>
-            <div class="skill-bar-bg" aria-hidden="true"><div class="skill-bar-fill" style="width: 92%;"></div></div>
-            <div class="skill-card-footer"><span>Nivel: Avanzado</span><span>92%</span></div>
+            <div class="tags-container">
+              <span class="tech-tag">Reverse Proxy</span>
+              <span class="tech-tag">Certificados SSL/TLS</span>
+              <span class="tech-tag">Load Balancing</span>
+              <span class="tech-tag">JBoss Fuse</span>
+            </div>
           </div>
 
           <!-- Bash Scripting -->
@@ -521,8 +556,11 @@
                 <div class="skill-category-tag">Automatización Linux</div>
               </div>
             </div>
-            <div class="skill-bar-bg" aria-hidden="true"><div class="skill-bar-fill" style="width: 95%;"></div></div>
-            <div class="skill-card-footer"><span>Nivel: Experto</span><span>95%</span></div>
+            <div class="tags-container">
+              <span class="tech-tag">Cron Automation</span>
+              <span class="tech-tag">Scripts de Despliegue</span>
+              <span class="tech-tag">Log Parsing (awk/sed/grep)</span>
+            </div>
           </div>
 
           <!-- PowerShell -->
@@ -534,8 +572,11 @@
                 <div class="skill-category-tag">Automatización Windows & Cloud</div>
               </div>
             </div>
-            <div class="skill-bar-bg" aria-hidden="true"><div class="skill-bar-fill" style="width: 92%;"></div></div>
-            <div class="skill-card-footer"><span>Nivel: Avanzado</span><span>92%</span></div>
+            <div class="tags-container">
+              <span class="tech-tag">Cmdlets Personalizados</span>
+              <span class="tech-tag">Módulos de Diagnóstico</span>
+              <span class="tech-tag">Automatización GCP</span>
+            </div>
           </div>
 
           <!-- Python -->
@@ -547,8 +588,12 @@
                 <div class="skill-category-tag">Desarrollo & Automatización</div>
               </div>
             </div>
-            <div class="skill-bar-bg" aria-hidden="true"><div class="skill-bar-fill" style="width: 90%;"></div></div>
-            <div class="skill-card-footer"><span>Nivel: Avanzado</span><span>90%</span></div>
+            <div class="tags-container">
+              <span class="tech-tag">FastAPI REST</span>
+              <span class="tech-tag">ETL & Data Processing</span>
+              <span class="tech-tag">SQLite / DuckDB</span>
+              <span class="tech-tag">Herramientas CLI</span>
+            </div>
           </div>
 
           <!-- Rust -->
@@ -560,8 +605,11 @@
                 <div class="skill-category-tag">Sistemas & Alto Rendimiento</div>
               </div>
             </div>
-            <div class="skill-bar-bg" aria-hidden="true"><div class="skill-bar-fill" style="width: 80%;"></div></div>
-            <div class="skill-card-footer"><span>Nivel: Intermedio-Avanzado</span><span>80%</span></div>
+            <div class="tags-container">
+              <span class="tech-tag">Paralelismo & Threads</span>
+              <span class="tech-tag">Análisis de Disco (MFT)</span>
+              <span class="tech-tag">DuckDB Integrations</span>
+            </div>
           </div>
 
           <!-- Docker -->
@@ -573,8 +621,11 @@
                 <div class="skill-category-tag">Containerization & Compose</div>
               </div>
             </div>
-            <div class="skill-bar-bg" aria-hidden="true"><div class="skill-bar-fill" style="width: 85%;"></div></div>
-            <div class="skill-card-footer"><span>Nivel: Avanzado</span><span>85%</span></div>
+            <div class="tags-container">
+              <span class="tech-tag">Dockerfiles</span>
+              <span class="tech-tag">Docker Compose</span>
+              <span class="tech-tag">Contenedores de Microservicios</span>
+            </div>
           </div>
         </div>
       </div>
@@ -725,6 +776,159 @@
               <a href="extras/spacex-platzi/src/index.html" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Ver demostración en vivo de SpaceX Missions Tracker">
                 <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i> Ver Demo en Vivo
               </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- NEW: Certifications & Credentials Section -->
+    <section class="certs-section" id="certificaciones" aria-label="Certificaciones y Credenciales">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">
+            <i class="fas fa-award" aria-hidden="true"></i> Credenciales & Logros
+          </div>
+          <h2 class="section-title">Certificaciones & Formación Profesional</h2>
+          <p class="section-subtitle">
+            Acreditaciones y certificaciones técnicas en plataformas de nube, administración de servidores, bases de datos y desarrollo de software.
+          </p>
+        </div>
+
+        <div class="certs-grid">
+          <!-- Cert 1 -->
+          <div class="cert-card">
+            <div class="cert-header">
+              <div class="cert-icon-box" aria-hidden="true">
+                <i class="devicon-googlecloud-plain colored"></i>
+              </div>
+              <div>
+                <h3 class="cert-title">Google Cloud Platform (GCP) Fundamentals & Architecture</h3>
+                <div class="cert-issuer">Google Cloud / Acreditación Técnica</div>
+              </div>
+            </div>
+            <div class="cert-meta">
+              <span class="cert-badge-valid">Credencial Activa</span>
+              <span>Infraestructura Cloud</span>
+            </div>
+            <div class="cert-tags">
+              <span class="tech-tag">Compute Engine</span>
+              <span class="tech-tag">VPC Networks</span>
+              <span class="tech-tag">Cloud IAM</span>
+              <span class="tech-tag">Hardening</span>
+            </div>
+          </div>
+
+          <!-- Cert 2 -->
+          <div class="cert-card">
+            <div class="cert-header">
+              <div class="cert-icon-box" aria-hidden="true">
+                <i class="devicon-postgresql-plain colored"></i>
+              </div>
+              <div>
+                <h3 class="cert-title">PostgreSQL Database Administration & Performance Tuning</h3>
+                <div class="cert-issuer">Especialización Enterprise DBA</div>
+              </div>
+            </div>
+            <div class="cert-meta">
+              <span class="cert-badge-valid">Credencial Activa</span>
+              <span>Bases de Datos & HA</span>
+            </div>
+            <div class="cert-tags">
+              <span class="tech-tag">Query Optimization</span>
+              <span class="tech-tag">Replicación</span>
+              <span class="tech-tag">DRP</span>
+              <span class="tech-tag">Index Tuning</span>
+            </div>
+          </div>
+
+          <!-- Cert 3 -->
+          <div class="cert-card">
+            <div class="cert-header">
+              <div class="cert-icon-box" aria-hidden="true">
+                <i class="devicon-linux-plain" style="color: #38bdf8;"></i>
+              </div>
+              <div>
+                <h3 class="cert-title">Linux System Administration & Server Hardening</h3>
+                <div class="cert-issuer">Linux Enterprise Environments</div>
+              </div>
+            </div>
+            <div class="cert-meta">
+              <span class="cert-badge-valid">Credencial Activa</span>
+              <span>SysAdmin & Seguridad</span>
+            </div>
+            <div class="cert-tags">
+              <span class="tech-tag">RHEL / Debian</span>
+              <span class="tech-tag">Bash Scripting</span>
+              <span class="tech-tag">Seguridad & SSH</span>
+              <span class="tech-tag">Logs</span>
+            </div>
+          </div>
+
+          <!-- Cert 4 -->
+          <div class="cert-card">
+            <div class="cert-header">
+              <div class="cert-icon-box" aria-hidden="true">
+                <i class="fas fa-cubes" style="color: var(--accent-cyan);"></i>
+              </div>
+              <div>
+                <h3 class="cert-title">MuleSoft Anypoint Platform Operations & Runtime Architecture</h3>
+                <div class="cert-issuer">MuleSoft / CloudHub Integration</div>
+              </div>
+            </div>
+            <div class="cert-meta">
+              <span class="cert-badge-valid">Credencial Activa</span>
+              <span>Integración & Middleware</span>
+            </div>
+            <div class="cert-tags">
+              <span class="tech-tag">CloudHub</span>
+              <span class="tech-tag">FinOps vCores</span>
+              <span class="tech-tag">Diagnóstico DNS/TCP</span>
+            </div>
+          </div>
+
+          <!-- Cert 5 -->
+          <div class="cert-card">
+            <div class="cert-header">
+              <div class="cert-icon-box" aria-hidden="true">
+                <i class="devicon-powershell-plain colored"></i>
+              </div>
+              <div>
+                <h3 class="cert-title">Automatización de Infraestructura & DevSecOps Scripting</h3>
+                <div class="cert-issuer">Automatización & Scripting Avanzado</div>
+              </div>
+            </div>
+            <div class="cert-meta">
+              <span class="cert-badge-valid">Credencial Activa</span>
+              <span>Scripting & CI/CD</span>
+            </div>
+            <div class="cert-tags">
+              <span class="tech-tag">PowerShell</span>
+              <span class="tech-tag">Bash</span>
+              <span class="tech-tag">Python CI/CD</span>
+              <span class="tech-tag">Auditorías</span>
+            </div>
+          </div>
+
+          <!-- Cert 6 -->
+          <div class="cert-card">
+            <div class="cert-header">
+              <div class="cert-icon-box" aria-hidden="true">
+                <i class="devicon-javascript-plain colored"></i>
+              </div>
+              <div>
+                <h3 class="cert-title">Desarrollo Web Moderno & Consumo de APIs REST (Platzi)</h3>
+                <div class="cert-issuer">Platzi / Formación Continua</div>
+              </div>
+            </div>
+            <div class="cert-meta">
+              <span class="cert-badge-valid">Completado</span>
+              <span>Desarrollo Frontend</span>
+            </div>
+            <div class="cert-tags">
+              <span class="tech-tag">JavaScript ES6+</span>
+              <span class="tech-tag">REST APIs</span>
+              <span class="tech-tag">Responsive Design</span>
             </div>
           </div>
         </div>

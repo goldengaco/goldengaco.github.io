@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Laboratorio de Diseños — Portafolio Carlos García</title>
+  
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Inter:wght@400;500;600;700;800&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
+  <style>
+    :root {
+      --bg-dark: #0a0e17;
+      --bg-card: rgba(17, 24, 39, 0.8);
+      --bg-card-hover: rgba(30, 41, 59, 0.9);
+      --border-subtle: rgba(255, 255, 255, 0.08);
+      --border-accent: rgba(56, 189, 248, 0.35);
+      --accent-cyan: #00e5ff;
+      --accent-blue: #38bdf8;
+      --accent-emerald: #10b981;
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+      --text-dim: #64748b;
+      --gradient-cyber: linear-gradient(135deg, #00e5ff 0%, #38bdf8 50%, #818cf8 100%);
+      --shadow-cyan: 0 0 25px rgba(0, 229, 255, 0.2);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg-dark);
+      color: var(--text-main);
+      line-height: 1.6;
+      padding: 2rem 1rem 4rem;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .header-box {
+      text-align: center;
+      margin-bottom: 3rem;
+      padding: 2rem;
+      background: rgba(15, 23, 42, 0.6);
+      border: 1px solid var(--border-accent);
+      border-radius: 20px;
+    }
+
+    .badge-top {
+      display: inline-block;
+      padding: 0.3rem 1rem;
+      background: rgba(56, 189, 248, 0.12);
+      border: 1px solid var(--border-accent);
+      color: var(--accent-cyan);
+      border-radius: 999px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 0.75rem;
+      font-family: 'Fira Code', monospace;
+    }
+
+    h1 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 2.4rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .section-block {
+      margin-bottom: 4rem;
+    }
+
+    .section-title {
+      font-family: 'Outfit', sans-serif;
+      font-size: 1.6rem;
+      color: var(--accent-cyan);
+      margin-bottom: 0.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+
+    .section-intro {
+      color: var(--text-muted);
+      margin-bottom: 1.75rem;
+      font-size: 0.95rem;
+    }
+
+    /* Grid layout */
+    .designs-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 2rem;
+    }
+
+    .design-card {
+      background: var(--bg-card);
+      border: 2px solid var(--border-subtle);
+      border-radius: 18px;
+      padding: 1.75rem;
+      position: relative;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .design-card:hover {
+      border-color: var(--accent-blue);
+      transform: translateY(-4px);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5), var(--shadow-cyan);
+    }
+
+    .design-card.selected {
+      border-color: var(--accent-cyan);
+      background: rgba(15, 23, 42, 0.95);
+      box-shadow: 0 0 30px rgba(0, 229, 255, 0.3);
+    }
+
+    .card-tag {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      background: rgba(255, 255, 255, 0.06);
+      padding: 0.2rem 0.6rem;
+      border-radius: 6px;
+      font-size: 0.75rem;
+      font-family: 'Fira Code', monospace;
+      color: var(--text-muted);
+    }
+
+    .card-title {
+      font-family: 'Outfit', sans-serif;
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+
+    .card-desc {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      margin-bottom: 1.5rem;
+    }
+
+    .preview-box {
+      background: #080c14;
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      border-radius: 14px;
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 220px;
+    }
+
+    /* Avatar Options Styles */
+    .avatar-circle {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      padding: 4px;
+      background: linear-gradient(135deg, rgba(0, 229, 255, 0.7), rgba(56, 189, 248, 0.3), rgba(16, 185, 129, 0.6));
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6), 0 0 20px rgba(0, 229, 255, 0.25);
+    }
+
+    .avatar-circle img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .badge-pill {
+      margin-top: 1rem;
+      padding: 0.45rem 1rem;
+      border-radius: 999px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .badge-role {
+      background: rgba(15, 23, 42, 0.9);
+      border: 1px solid var(--border-accent);
+      color: var(--accent-cyan);
+    }
+
+    .badge-status {
+      background: rgba(16, 185, 129, 0.12);
+      border: 1px solid rgba(16, 185, 129, 0.3);
+      color: #34d399;
+    }
+
+    .badge-code {
+      background: rgba(129, 140, 248, 0.15);
+      border: 1px solid rgba(129, 140, 248, 0.3);
+      color: #a5b4fc;
+      font-family: 'Fira Code', monospace;
+    }
+
+    /* Skills Preview Styles without percentages */
+    .sample-skill-card-v1 {
+      width: 100%;
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: 12px;
+      padding: 1rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .sample-skill-header {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin-bottom: 0.6rem;
+    }
+
+    .sample-skill-icon {
+      font-size: 1.5rem;
+      color: var(--accent-cyan);
+    }
+
+    .sample-skill-name {
+      font-weight: 700;
+      font-size: 0.95rem;
+    }
+
+    .sample-skill-sub {
+      font-size: 0.75rem;
+      color: var(--text-dim);
+    }
+
+    .tags-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.35rem;
+    }
+
+    .tech-tag {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      color: #cbd5e1;
+      padding: 0.15rem 0.5rem;
+      border-radius: 5px;
+      font-size: 0.72rem;
+      font-family: 'Fira Code', monospace;
+    }
+
+    /* Bento grid style */
+    .bento-sample-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0.6rem;
+      width: 100%;
+    }
+
+    .bento-pill {
+      background: rgba(30, 41, 59, 0.6);
+      border: 1px solid var(--border-subtle);
+      border-radius: 10px;
+      padding: 0.65rem 0.8rem;
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: #e2e8f0;
+    }
+
+    .bento-pill i {
+      font-size: 1.2rem;
+    }
+
+    /* Select button */
+    .btn-select {
+      width: 100%;
+      margin-top: 1rem;
+      padding: 0.6rem;
+      background: rgba(56, 189, 248, 0.1);
+      border: 1px solid var(--border-accent);
+      color: var(--accent-cyan);
+      border-radius: 10px;
+      font-weight: 600;
+      font-size: 0.85rem;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .btn-select:hover {
+      background: var(--accent-blue);
+      color: #0a0e17;
+    }
+
+    .summary-box {
+      background: rgba(15, 23, 42, 0.9);
+      border: 1px solid var(--accent-cyan);
+      border-radius: 16px;
+      padding: 2rem;
+      text-align: center;
+      margin-top: 3rem;
+    }
+
+    .btn-copy {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: var(--gradient-cyber);
+      color: #0a0e17;
+      border: none;
+      padding: 0.8rem 1.8rem;
+      border-radius: 10px;
+      font-weight: 700;
+      cursor: pointer;
+      font-size: 1rem;
+      margin-top: 1rem;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    
+    <div class="header-box">
+      <div class="badge-top">LABORATORIO VISUAL INTERACTIVO</div>
+      <h1>Compara y Elige los Nuevos Diseños</h1>
+      <p style="color: var(--text-muted); max-width: 680px; margin: 0 auto;">
+        Haz clic en las tarjetas para seleccionar tu combinación preferida de Avatar y Matriz de Habilidades (reemplazando los porcentajes por competencias reales).
+      </p>
+    </div>
+
+    <!-- SECCIÓN 1: FOTO DE PERFIL / AVATAR -->
+    <div class="section-block">
+      <h2 class="section-title"><i class="fas fa-user-circle"></i> 1. Elige el Diseño para tu Foto de Perfil</h2>
+      <p class="section-intro">Selecciona cómo te gustaría que aparezca tu fotografía en el encabezado principal:</p>
+
+      <div class="designs-grid">
+        
+        <!-- Opción A -->
+        <div class="design-card selected" onclick="selectOption('avatar', 'A', this)">
+          <div class="card-tag">OPCIÓN A (Recomendada)</div>
+          <h3 class="card-title">Minimalista Puro</h3>
+          <p class="card-desc">Fotografía circular con anillo sutil iluminado cian/esmeralda, sin ninguna pastilla que sobrecargue la vista.</p>
+          <div class="preview-box">
+            <div class="avatar-circle">
+              <img src="images/pic00.webp" alt="Carlos García">
+            </div>
+          </div>
+          <button class="btn-select">Seleccionar Opción A</button>
+        </div>
+
+        <!-- Opción B -->
+        <div class="design-card" onclick="selectOption('avatar', 'B', this)">
+          <div class="card-tag">OPCIÓN B</div>
+          <h3 class="card-title">Badge de Especialidad</h3>
+          <p class="card-desc">Con una pastilla clara que resume tu especialidad técnica principal para reclutadores.</p>
+          <div class="preview-box">
+            <div class="avatar-circle">
+              <img src="images/pic00.webp" alt="Carlos García">
+            </div>
+            <div class="badge-pill badge-role">
+              <i class="fas fa-shield-halved"></i>
+              <span>SysAdmin & DBA Senior</span>
+            </div>
+          </div>
+          <button class="btn-select">Seleccionar Opción B</button>
+        </div>
+
+        <!-- Opción C -->
+        <div class="design-card" onclick="selectOption('avatar', 'C', this)">
+          <div class="card-tag">OPCIÓN C</div>
+          <h3 class="card-title">Badge de Disponibilidad</h3>
+          <p class="card-desc">Muestra tu estado laboral y apertura para trabajo remoto o proyectos de consultoría.</p>
+          <div class="preview-box">
+            <div class="avatar-circle">
+              <img src="images/pic00.webp" alt="Carlos García">
+            </div>
+            <div class="badge-pill badge-status">
+              <span style="width: 8px; height: 8px; border-radius: 50%; background: #10b981; box-shadow: 0 0 8px #10b981;"></span>
+              <span>Open to Work / Remoto</span>
+            </div>
+          </div>
+          <button class="btn-select">Seleccionar Opción C</button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- SECCIÓN 2: HABILIDADES SIN PORCENTAJES -->
+    <div class="section-block">
+      <h2 class="section-title"><i class="fas fa-layer-group"></i> 2. Elige el Nuevo Diseño de Habilidades (Sin Porcentajes)</h2>
+      <p class="section-intro">Los porcentajes son considerados una mala práctica en perfiles senior. Elige cómo mostrar tus conocimientos reales:</p>
+
+      <div class="designs-grid">
+
+        <!-- Opción Habilidades 1 -->
+        <div class="design-card selected" onclick="selectOption('skills', '1', this)">
+          <div class="card-tag">DISEÑO 1 (Senior Enterprise)</div>
+          <h3 class="card-title">Tarjetas de Competencias Clave</h3>
+          <p class="card-desc">Cada tecnología muestra su icono oficial en color, categoría y etiquetas de lo que realmente dominas (Tuning, DRP, HA, Replicación) en lugar de barras ni números.</p>
+          <div class="preview-box" style="align-items: stretch;">
+            
+            <div class="sample-skill-card-v1">
+              <div class="sample-skill-header">
+                <i class="devicon-postgresql-plain colored sample-skill-icon"></i>
+                <div>
+                  <div class="sample-skill-name">PostgreSQL</div>
+                  <div class="sample-skill-sub">DBA Enterprise & Optimización</div>
+                </div>
+              </div>
+              <div class="tags-container">
+                <span class="tech-tag">Query Tuning</span>
+                <span class="tech-tag">Replicación HA</span>
+                <span class="tech-tag">Índices</span>
+                <span class="tech-tag">Migraciones</span>
+              </div>
+            </div>
+
+            <div class="sample-skill-card-v1">
+              <div class="sample-skill-header">
+                <i class="devicon-linux-plain sample-skill-icon" style="color: #f8fafc;"></i>
+                <div>
+                  <div class="sample-skill-name">Linux (RHEL / Ubuntu)</div>
+                  <div class="sample-skill-sub">Administración & Kernel</div>
+                </div>
+              </div>
+              <div class="tags-container">
+                <span class="tech-tag">Hardening</span>
+                <span class="tech-tag">Permisos</span>
+                <span class="tech-tag">Logs Forensics</span>
+                <span class="tech-tag">DRP</span>
+              </div>
+            </div>
+
+          </div>
+          <button class="btn-select">Seleccionar Diseño 1</button>
+        </div>
+
+        <!-- Opción Habilidades 2 -->
+        <div class="design-card" onclick="selectOption('skills', '2', this)">
+          <div class="card-tag">DISEÑO 2 (Bento Grid)</div>
+          <h3 class="card-title">Insignias Tecnológicas Bento</h3>
+          <p class="card-desc">Diseño minimalista ultra limpio con insignias compactas de vidrio oscuro y los iconos oficiales con hover brillante.</p>
+          <div class="preview-box">
+            
+            <div class="bento-sample-grid">
+              <div class="bento-pill">
+                <i class="devicon-linux-plain" style="color: #38bdf8;"></i>
+                <span>Linux RHEL/Debian</span>
+              </div>
+              <div class="bento-pill">
+                <i class="devicon-postgresql-plain colored"></i>
+                <span>PostgreSQL</span>
+              </div>
+              <div class="bento-pill">
+                <i class="devicon-googlecloud-plain colored"></i>
+                <span>Google Cloud</span>
+              </div>
+              <div class="bento-pill">
+                <i class="devicon-microsoftsqlserver-plain colored"></i>
+                <span>SQL Server</span>
+              </div>
+              <div class="bento-pill">
+                <i class="devicon-bash-plain" style="color: #4ade80;"></i>
+                <span>Bash Scripting</span>
+              </div>
+              <div class="bento-pill">
+                <i class="devicon-python-plain colored"></i>
+                <span>Python & FastAPI</span>
+              </div>
+            </div>
+
+          </div>
+          <button class="btn-select">Seleccionar Diseño 2</button>
+        </div>
+
+        <!-- Opción Habilidades 3 -->
+        <div class="design-card" onclick="selectOption('skills', '3', this)">
+          <div class="card-tag">DISEÑO 3 (Nivel de Dominio Cualitativo)</div>
+          <h3 class="card-title">Niveles Profesionales Cualitativos</h3>
+          <p class="card-desc">En lugar de porcentajes numéricos (ej. 90%), se usa una etiqueta de nivel profesional real: *Especialista*, *Avanzado*, *Producción 24/7*.</p>
+          <div class="preview-box" style="align-items: stretch;">
+            
+            <div class="sample-skill-card-v1">
+              <div class="sample-skill-header" style="justify-content: space-between; margin-bottom: 0;">
+                <div style="display: flex; align-items: center; gap: 0.75rem;">
+                  <i class="devicon-postgresql-plain colored sample-skill-icon"></i>
+                  <div>
+                    <div class="sample-skill-name">PostgreSQL</div>
+                    <div class="sample-skill-sub">Entornos Productivos & DRP</div>
+                  </div>
+                </div>
+                <span style="font-size: 0.75rem; background: rgba(16, 185, 129, 0.15); color: #34d399; padding: 0.2rem 0.6rem; border-radius: 999px; border: 1px solid rgba(16, 185, 129, 0.3); font-weight: 600;">Especialista</span>
+              </div>
+            </div>
+
+            <div class="sample-skill-card-v1">
+              <div class="sample-skill-header" style="justify-content: space-between; margin-bottom: 0;">
+                <div style="display: flex; align-items: center; gap: 0.75rem;">
+                  <i class="devicon-linux-plain sample-skill-icon" style="color: #f8fafc;"></i>
+                  <div>
+                    <div class="sample-skill-name">Linux Servers</div>
+                    <div class="sample-skill-sub">RHEL / Ubuntu / Debian</div>
+                  </div>
+                </div>
+                <span style="font-size: 0.75rem; background: rgba(56, 189, 248, 0.15); color: #38bdf8; padding: 0.2rem 0.6rem; border-radius: 999px; border: 1px solid rgba(56, 189, 248, 0.3); font-weight: 600;">Avanzado</span>
+              </div>
+            </div>
+
+          </div>
+          <button class="btn-select">Seleccionar Diseño 3</button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Resumen de tu selección -->
+    <div class="summary-box">
+      <h3 style="font-size: 1.3rem; margin-bottom: 0.5rem; font-family: 'Outfit', sans-serif;">Tu Selección Actual:</h3>
+      <p id="selectionText" style="font-size: 1.1rem; color: var(--accent-cyan); font-weight: 600; font-family: 'Fira Code', monospace;">
+        Avatar: Opción A (Minimalista Puro) + Habilidades: Diseño 1 (Competencias Clave)
+      </p>
+      <button class="btn-copy" onclick="copySelection()">
+        <i class="fas fa-copy"></i> Copiar mi Selección para decírtela
+      </button>
+      <div id="copyAlert" style="display: none; margin-top: 0.75rem; color: #34d399; font-size: 0.9rem;">
+        ¡Texto copiado! Puedes pegármelo aquí en el chat.
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    let selectedAvatar = 'Opción A (Minimalista Puro)';
+    let selectedSkills = 'Diseño 1 (Tarjetas de Competencias Clave)';
+
+    function selectOption(type, option, cardElement) {
+      const parentBlock = cardElement.closest('.section-block');
+      parentBlock.querySelectorAll('.design-card').forEach(card => card.classList.remove('selected'));
+      cardElement.classList.add('selected');
+
+      if (type === 'avatar') {
+        if (option === 'A') selectedAvatar = 'Opción A (Minimalista Puro)';
+        if (option === 'B') selectedAvatar = 'Opción B (Badge SysAdmin & DBA Senior)';
+        if (option === 'C') selectedAvatar = 'Opción C (Badge Open to Work)';
+      } else if (type === 'skills') {
+        if (option === '1') selectedSkills = 'Diseño 1 (Tarjetas de Competencias Clave)';
+        if (option === '2') selectedSkills = 'Diseño 2 (Insignias Bento Grid)';
+        if (option === '3') selectedSkills = 'Diseño 3 (Nivel Cualitativo Especialista/Avanzado)';
+      }
+
+      updateSummary();
+    }
+
+    function updateSummary() {
+      document.getElementById('selectionText').textContent = `Avatar: ${selectedAvatar} + Habilidades: ${selectedSkills}`;
+    }
+
+    function copySelection() {
+      const text = `Quiero Avatar: ${selectedAvatar} y Habilidades: ${selectedSkills}`;
+      navigator.clipboard.writeText(text).then(() => {
+        const alert = document.getElementById('copyAlert');
+        alert.style.display = 'block';
+        setTimeout(() => alert.style.display = 'none', 3000);
+      });
+    }
+  </script>
+</body>
+</html>
