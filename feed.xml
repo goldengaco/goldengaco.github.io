@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Carlos García — Proyectos & Infraestructura</title>
+    <link>https://goldengaco.github.io/</link>
+    <description>Publicaciones, herramientas de infraestructura, optimizaciones de bases de datos y lanzamientos de Carlos García.</description>
+    <language>es</language>
+    <lastBuildDate>Sat, 22 Aug 2026 23:00:00 GMT</lastBuildDate>
+    <atom:link href="https://goldengaco.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    
+    <item>
+      <title>Lanzamiento de MuleRadarVcore: Radar Forense de vCores y FinOps</title>
+      <link>https://goldengaco.github.io/#proyectos</link>
+      <guid>https://goldengaco.github.io/#muleradarvcore</guid>
+      <pubDate>Sat, 22 Aug 2026 12:00:00 GMT</pubDate>
+      <description>Herramienta analítica para monitoreo de capacidad, análisis forense de vCores y optimización de costos en MuleSoft Anypoint Platform.</description>
+    </item>
+
+    <item>
+      <title>Suite de Hardening y Auditoría de Seguridad para Google Cloud (GCP)</title>
+      <link>https://goldengaco.github.io/#proyectos</link>
+      <guid>https://goldengaco.github.io/#gcp-hardening</guid>
+      <pubDate>Thu, 20 Aug 2026 12:00:00 GMT</pubDate>
+      <description>Suite de 33 checklists automatizados y scripts de hardening para infraestructura GCP y Envoy Proxy.</description>
+    </item>
+  </channel>
+</rss>

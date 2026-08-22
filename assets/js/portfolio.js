@@ -10,7 +10,20 @@ document.addEventListener('DOMContentLoaded', () => {
   initSkillsFilter();
   initProjectsFilter();
   initCopyEmail();
+  initServiceWorker();
 });
+
+function initServiceWorker() {
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('sw.js').then((reg) => {
+        console.log('🚀 PWA Service Worker registrado con éxito:', reg.scope);
+      }).catch((err) => {
+        console.log('Service Worker no registrado:', err);
+      });
+    });
+  }
+}
 
 /* ==========================================================================
    1. Navbar & Mobile Menu Handling

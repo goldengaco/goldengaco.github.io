@@ -12,12 +12,14 @@ Portafolio web profesional diseñado con un enfoque moderno, responsivo y de alt
 
 ### ✨ Características Principales
 
-- 💻 **Terminal CLI Interactivo**: Emulador de línea de comandos en tiempo real donde reclutadores y visitantes pueden explorar mi perfil mediante comandos (`help`, `skills`, `projects`, `uptime`, `whoami`).
+- 💻 **Terminal CLI Interactivo**: Emulador de línea de comandos en tiempo real donde reclutadores y visitantes pueden explorar mi perfil mediante comandos (`help`, `skills`, `projects`, `certs`, `whoami`).
 - ⚡ **Efecto de Escritura Dinámico**: Presentación interactiva de roles y especialidades en el Hero Header.
-- 🎯 **Matriz de Habilidades Filtrable**: Clasificación de stack técnico por categorías (Servidores & Cloud, Bases de Datos, Middleware, Scripting y DevSecOps) con medidores de nivel de experiencia.
+- 🎯 **Matriz de Habilidades por Competencias**: Stack técnico categorizado con casos de uso de nivel senior (sin barras de porcentaje arbitrarias).
+- 🎓 **Sección de Certificaciones**: Credenciales verificables en Google Cloud, Linux, PostgreSQL, MuleSoft y automatización.
 - 📂 **Showcase de Proyectos y Herramientas**: Catálogo modular de herramientas empresariales y desarrollos personales (*MuleRadarVcore*, *GCP Hardening Suite*, *DBA Migration Framework*, *Rust Parallel Suite*).
-- 📅 **Línea de Tiempo de Trayectoria**: Resumen estructurado de responsabilidades y soporte en entornos Productivos y DRP.
-- 📱 **100% Responsivo & Accesible**: Optimizado para móviles, tablets, monitores ultra-panorámicos y validado con estándares semánticos de HTML5.
+- 🚀 **Progressive Web App (PWA) & Service Worker**: Soporte offline completo, carga instantánea y caché inteligente *stale-while-revalidate*.
+- 🌐 **SEO Rich Snippets & IA**: Marcado semántico JSON-LD (Schema.org), feed RSS (`feed.xml`) y directrices `llms.txt` para agentes de IA.
+- 🎨 **Identidad Visual & Favicon Tech**: Icono vectorial SVG nativo en la pestaña del navegador.
 
 ---
 

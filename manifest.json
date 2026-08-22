@@ -1,0 +1,48 @@
+{
+  "name": "Carlos García — Senior SysAdmin & DBA",
+  "short_name": "Carlos García",
+  "description": "Portafolio profesional de Carlos García. Especialista en Administración de Servidores, Bases de Datos, Cloud (GCP/MuleSoft) y Automatización.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0e17",
+  "theme_color": "#0a0e17",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "favicon.png",
+      "sizes": "64x64",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "images/pic00.webp",
+      "sizes": "450x450",
+      "type": "image/webp",
+      "purpose": "any"
+    }
+  ],
+  "categories": ["business", "developer", "productivity"],
+  "shortcuts": [
+    {
+      "name": "Proyectos",
+      "url": "/#proyectos",
+      "description": "Ver proyectos destacados de Carlos García"
+    },
+    {
+      "name": "Certificaciones",
+      "url": "/#certificaciones",
+      "description": "Ver certificaciones y credenciales"
+    },
+    {
+      "name": "Contacto",
+      "url": "/#contacto",
+      "description": "Contactar a Carlos García"
+    }
+  ]
+}

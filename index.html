@@ -29,11 +29,25 @@
   <meta property="twitter:description" content="Portafolio profesional de Carlos García. Especialista en Administración de Servidores, Bases de Datos, Cloud y Automatización.">
   <meta property="twitter:image" content="https://goldengaco.github.io/images/pic00.jpg">
 
-  <!-- Preconnect & Fonts -->
+  <!-- Favicon & Touch Icons -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="alternate icon" type="image/png" href="favicon.png">
+  <link rel="apple-touch-icon" href="favicon.png">
+
+  <!-- Progressive Web App (PWA) Manifest -->
+  <link rel="manifest" href="manifest.json">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  <!-- RSS Feed -->
+  <link rel="alternate" type="application/rss+xml" title="Carlos García — Actualizaciones & Proyectos" href="https://goldengaco.github.io/feed.xml">
+
+  <!-- Preconnect & Preload -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://cdnjs.cloudflare.com">
   <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <link rel="preload" href="assets/css/professional.css" as="style">
   <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   
   <!-- FontAwesome 6 & DevIcon -->
@@ -42,6 +56,41 @@
 
   <!-- Stylesheet -->
   <link rel="stylesheet" href="assets/css/professional.css">
+
+  <!-- Structured Data JSON-LD (Schema.org / Google Rich Snippets & AI Agents) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfilePage",
+    "mainEntity": {
+      "@type": "Person",
+      "name": "Carlos Javier García Contreras",
+      "alternateName": "Carlos García",
+      "jobTitle": "Senior Infrastructure & DBA Engineer",
+      "description": "Especialista en Administración de Servidores Linux/Windows, DBA Multi-motor (PostgreSQL, SQL Server, MySQL, Informix, Netezza), Cloud (GCP/MuleSoft) y Automatización.",
+      "url": "https://goldengaco.github.io/",
+      "image": "https://goldengaco.github.io/images/pic00.jpg",
+      "sameAs": [
+        "https://www.linkedin.com/in/carlosjgarciac",
+        "https://github.com/goldengaco"
+      ],
+      "knowsAbout": [
+        "Linux Server Administration",
+        "PostgreSQL Enterprise DBA",
+        "Google Cloud Platform",
+        "MuleSoft Anypoint Platform",
+        "Query Tuning & Optimization",
+        "Disaster Recovery (DRP)",
+        "High Availability",
+        "Bash Automation",
+        "PowerShell",
+        "Python",
+        "Rust",
+        "DevSecOps"
+      ]
+    }
+  }
+  </script>
 </head>
 <body>
 
