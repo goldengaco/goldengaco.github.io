@@ -1,6 +1,7 @@
 # 🚀 Portafolio Profesional — Carlos Javier García Contreras
 
 > **Senior Infrastructure & DBA Engineer | Cloud, Linux & DevSecOps**  
+> **Versión Actual**: `v2.0.0` (Edición Cyber-Slate Enterprise)  
 > Sitio Web en Producción: [https://goldengaco.github.io/](https://goldengaco.github.io/)
 
 ---
