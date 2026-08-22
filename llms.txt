@@ -1,0 +1,26 @@
+# Carlos García - Senior Infrastructure, DBA & Cloud Engineer
+
+> Portfolio and technical profile of Carlos Javier García Contreras (goldengaco).
+
+## Summary
+Carlos García is a Senior Systems Administrator, Database Administrator (DBA), and Cloud/DevSecOps Engineer with over 7 years of experience in enterprise infrastructure, high availability (HA), disaster recovery (DRP), and system automation.
+
+## Core Technical Skills
+- **Operating Systems & Cloud**: Linux (RHEL, Ubuntu, Debian), Windows Server, Google Cloud Platform (GCP), MuleSoft CloudHub, Docker.
+- **Database Administration (DBA)**: PostgreSQL, Microsoft SQL Server, MySQL, MariaDB, IBM Informix, IBM Netezza, SQLite, DuckDB. Performance tuning, query optimization, indexing strategies, heterogeneous database migrations, backup and recovery.
+- **Middleware & Networking**: Nginx, Apache HTTP Server, Apache Tomcat, JBoss Fuse, Envoy Proxy, DNS diagnostics, VPC security.
+- **Automation & Scripting**: Bash, PowerShell, Python (FastAPI, ETL, Forensics), Rust, JavaScript/TypeScript.
+- **Security & DevSecOps**: GCP Hardening, audit checklists, log forensics, compliance, InvGate, Zabbix, monitoring.
+
+## Featured Projects
+- **MuleRadarVcore**: Forensic vCores, capacity and FinOps radar for MuleSoft Anypoint Platform.
+- **GCP Security Hardening Suite**: 33 automated audit checklists and hardening scripts for GCP infrastructure.
+- **DBA Multi-Engine Migration Framework**: Zero-downtime and consistent cross-engine data migration tooling.
+- **MuleSoft CloudHub Net-Tools**: Diagnostic forensics suite for network and DNS validation.
+- **MarketRadar & VivyDisk**: Parallel high-throughput data and disk analysis engines built in Rust and DuckDB.
+
+## Contact Information
+- **Email**: carlosjgarciac@gmail.com
+- **LinkedIn**: https://www.linkedin.com/in/carlosjgarciac
+- **GitHub**: https://github.com/goldengaco
+- **Website**: https://goldengaco.github.io/
