@@ -1084,6 +1084,39 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--accent-cyan);
 }
 
+.project-badge-type {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.74rem;
+  font-family: var(--font-mono);
+  padding: 0.2rem 0.6rem;
+  border-radius: var(--radius-full);
+  margin-bottom: 0.6rem;
+  width: fit-content;
+}
+
+.project-badge-type.private {
+  background: rgba(244, 63, 94, 0.12);
+  border: 1px solid rgba(244, 63, 94, 0.3);
+  color: #fb7185;
+}
+
+.project-badge-type.public {
+  background: rgba(16, 185, 129, 0.12);
+  border: 1px solid rgba(16, 185, 129, 0.3);
+  color: #34d399;
+}
+
+.project-private-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.84rem;
+  color: var(--text-dim);
+  font-family: var(--font-mono);
+}
+
 .project-icon-top {
   width: 48px;
   height: 48px;

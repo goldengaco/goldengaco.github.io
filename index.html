@@ -419,7 +419,7 @@
           </div>
           <h2 class="section-title">Matriz de Habilidades & Tecnologías</h2>
           <p class="section-subtitle">
-            Competencias prácticas y experiencia de campo demostrada en sistemas operativos, motores de bases de datos, middleware y automatización.
+            Competencias de campo demostradas en administración de sistemas, motores de bases de datos, middleware, monitoreo y automatización.
           </p>
         </div>
 
@@ -434,7 +434,10 @@
             <i class="fas fa-database" aria-hidden="true"></i> Bases de Datos
           </button>
           <button class="skill-tab-btn" data-skill-filter="middleware" aria-label="Filtrar por Middleware">
-            <i class="fas fa-layer-group" aria-hidden="true"></i> Middleware
+            <i class="fas fa-layer-group" aria-hidden="true"></i> Middleware & Apps
+          </button>
+          <button class="skill-tab-btn" data-skill-filter="monitoring" aria-label="Filtrar por Monitoreo y Observabilidad">
+            <i class="fas fa-chart-line" aria-hidden="true"></i> Monitoreo & APM
           </button>
           <button class="skill-tab-btn" data-skill-filter="dev" aria-label="Filtrar por Scripting y Lenguajes">
             <i class="fas fa-terminal" aria-hidden="true"></i> Scripting & Lenguajes
@@ -442,41 +445,6 @@
         </div>
 
         <div class="skills-grid">
-          <!-- Linux -->
-          <div class="skill-card" data-category="servers">
-            <div class="skill-card-top">
-              <div class="skill-badge-icon" aria-hidden="true"><i class="devicon-linux-plain"></i></div>
-              <div>
-                <h3 class="skill-name">Linux (RHEL / Ubuntu / Debian)</h3>
-                <div class="skill-category-tag">Servidores & Kernel</div>
-              </div>
-            </div>
-            <div class="tags-container">
-              <span class="tech-tag">Hardening</span>
-              <span class="tech-tag">Permisos & SSH</span>
-              <span class="tech-tag">Logs Forensics</span>
-              <span class="tech-tag">DRP</span>
-              <span class="tech-tag">Systemd</span>
-            </div>
-          </div>
-
-          <!-- Windows Server -->
-          <div class="skill-card" data-category="servers">
-            <div class="skill-card-top">
-              <div class="skill-badge-icon" aria-hidden="true"><i class="devicon-windows8-original"></i></div>
-              <div>
-                <h3 class="skill-name">Windows Server</h3>
-                <div class="skill-category-tag">Active Directory & IIS</div>
-              </div>
-            </div>
-            <div class="tags-container">
-              <span class="tech-tag">Active Directory</span>
-              <span class="tech-tag">IIS Web Server</span>
-              <span class="tech-tag">GPO & Roles</span>
-              <span class="tech-tag">Event Viewer</span>
-            </div>
-          </div>
-
           <!-- PostgreSQL -->
           <div class="skill-card" data-category="databases">
             <div class="skill-card-top">
@@ -495,13 +463,13 @@
             </div>
           </div>
 
-          <!-- SQL Server -->
+          <!-- Microsoft SQL Server -->
           <div class="skill-card" data-category="databases">
             <div class="skill-card-top">
               <div class="skill-badge-icon" aria-hidden="true"><i class="devicon-microsoftsqlserver-plain colored"></i></div>
               <div>
                 <h3 class="skill-name">Microsoft SQL Server</h3>
-                <div class="skill-category-tag">T-SQL, Mantenimiento, Tuning</div>
+                <div class="skill-category-tag">T-SQL, Mantenimiento & Tuning</div>
               </div>
             </div>
             <div class="tags-container">
@@ -512,7 +480,58 @@
             </div>
           </div>
 
-          <!-- MySQL -->
+          <!-- IBM Informix -->
+          <div class="skill-card" data-category="databases">
+            <div class="skill-card-top">
+              <div class="skill-badge-icon" aria-hidden="true"><i class="fas fa-database" style="color: var(--accent-cyan);"></i></div>
+              <div>
+                <h3 class="skill-name">IBM Informix</h3>
+                <div class="skill-category-tag">Bases de Datos Enterprise</div>
+              </div>
+            </div>
+            <div class="tags-container">
+              <span class="tech-tag">Onstat & Diagnóstico</span>
+              <span class="tech-tag">DB Spaces</span>
+              <span class="tech-tag">Alta Concurrencia</span>
+              <span class="tech-tag">Migración Masiva</span>
+            </div>
+          </div>
+
+          <!-- IBM Netezza -->
+          <div class="skill-card" data-category="databases">
+            <div class="skill-card-top">
+              <div class="skill-badge-icon" aria-hidden="true"><i class="fas fa-server" style="color: var(--accent-emerald);"></i></div>
+              <div>
+                <h3 class="skill-name">IBM Netezza</h3>
+                <div class="skill-category-tag">Data Warehousing & Analytics</div>
+              </div>
+            </div>
+            <div class="tags-container">
+              <span class="tech-tag">Data Warehousing</span>
+              <span class="tech-tag">Análisis Masivo OLAP</span>
+              <span class="tech-tag">ETL Enterprise</span>
+              <span class="tech-tag">Particionamiento</span>
+            </div>
+          </div>
+
+          <!-- MongoDB -->
+          <div class="skill-card" data-category="databases">
+            <div class="skill-card-top">
+              <div class="skill-badge-icon" aria-hidden="true"><i class="devicon-mongodb-plain colored"></i></div>
+              <div>
+                <h3 class="skill-name">MongoDB</h3>
+                <div class="skill-category-tag">NoSQL & Document Store</div>
+              </div>
+            </div>
+            <div class="tags-container">
+              <span class="tech-tag">Document Store</span>
+              <span class="tech-tag">Aggregation Pipelines</span>
+              <span class="tech-tag">Replica Sets</span>
+              <span class="tech-tag">Indexación BSON</span>
+            </div>
+          </div>
+
+          <!-- MySQL & MariaDB -->
           <div class="skill-card" data-category="databases">
             <div class="skill-card-top">
               <div class="skill-badge-icon" aria-hidden="true"><i class="devicon-mysql-plain colored"></i></div>
@@ -528,24 +547,91 @@
             </div>
           </div>
 
-          <!-- Informix & Netezza -->
+          <!-- SQLite & DuckDB -->
           <div class="skill-card" data-category="databases">
             <div class="skill-card-top">
-              <div class="skill-badge-icon" aria-hidden="true"><i class="fas fa-server" style="color: var(--accent-cyan);"></i></div>
+              <div class="skill-badge-icon" aria-hidden="true"><i class="devicon-sqlite-plain colored"></i></div>
               <div>
-                <h3 class="skill-name">IBM Informix & Netezza</h3>
-                <div class="skill-category-tag">Bases de Datos Enterprise</div>
+                <h3 class="skill-name">SQLite & DuckDB</h3>
+                <div class="skill-category-tag">Bases Embebidas & OLAP Local</div>
               </div>
             </div>
             <div class="tags-container">
-              <span class="tech-tag">Data Warehousing</span>
-              <span class="tech-tag">ETL Masivo</span>
-              <span class="tech-tag">Migración Heterogénea</span>
-              <span class="tech-tag">Onstat</span>
+              <span class="tech-tag">DuckDB OLAP</span>
+              <span class="tech-tag">Storage Columnar</span>
+              <span class="tech-tag">SQLite Forensics</span>
+              <span class="tech-tag">Fast In-Memory</span>
             </div>
           </div>
 
-          <!-- Google Cloud Platform -->
+          <!-- Linux Enterprise (RHEL / CentOS / Rocky) -->
+          <div class="skill-card" data-category="servers">
+            <div class="skill-card-top">
+              <div class="skill-badge-icon" aria-hidden="true"><i class="devicon-redhat-plain colored"></i></div>
+              <div>
+                <h3 class="skill-name">Linux Enterprise (RHEL / CentOS)</h3>
+                <div class="skill-category-tag">Servidores de Misión Crítica</div>
+              </div>
+            </div>
+            <div class="tags-container">
+              <span class="tech-tag">Hardening</span>
+              <span class="tech-tag">SELinux & PAM</span>
+              <span class="tech-tag">RPM / DNF / Yum</span>
+              <span class="tech-tag">DRP & Clustering</span>
+            </div>
+          </div>
+
+          <!-- Linux Debian & Ubuntu -->
+          <div class="skill-card" data-category="servers">
+            <div class="skill-card-top">
+              <div class="skill-badge-icon" aria-hidden="true"><i class="devicon-ubuntu-plain colored"></i></div>
+              <div>
+                <h3 class="skill-name">Linux Debian & Ubuntu</h3>
+                <div class="skill-category-tag">Servidores Web & Apps</div>
+              </div>
+            </div>
+            <div class="tags-container">
+              <span class="tech-tag">Systemd Services</span>
+              <span class="tech-tag">SSH & Firewall UFW/Iptables</span>
+              <span class="tech-tag">Apt Repositories</span>
+              <span class="tech-tag">Logs Forensics</span>
+            </div>
+          </div>
+
+          <!-- Linux Slackware & Pop!_OS -->
+          <div class="skill-card" data-category="servers">
+            <div class="skill-card-top">
+              <div class="skill-badge-icon" aria-hidden="true"><i class="devicon-linux-plain" style="color: #38bdf8;"></i></div>
+              <div>
+                <h3 class="skill-name">Slackware & Pop!_OS</h3>
+                <div class="skill-category-tag">Uso Avanzado & Personal</div>
+              </div>
+            </div>
+            <div class="tags-container">
+              <span class="tech-tag">Kernel Tuning</span>
+              <span class="tech-tag">Compilación desde Fuente</span>
+              <span class="tech-tag">Entornos de Desarrollo</span>
+            </div>
+          </div>
+
+          <!-- Windows Server -->
+          <div class="skill-card" data-category="servers">
+            <div class="skill-card-top">
+              <div class="skill-badge-icon" aria-hidden="true"><i class="devicon-windows8-original"></i></div>
+              <div>
+                <h3 class="skill-name">Windows Server</h3>
+                <div class="skill-category-tag">Active Directory & IIS</div>
+              </div>
+            </div>
+            <div class="tags-container">
+              <span class="tech-tag">Active Directory</span>
+              <span class="tech-tag">IIS Web Server</span>
+              <span class="tech-tag">GPO & Políticas</span>
+              <span class="tech-tag">Event Viewer</span>
+            </div>
+          </div>
+
+          <!-- Google Cloud Platform (GCP) -->
           <div class="skill-card" data-category="servers">
             <div class="skill-card-top">
               <div class="skill-badge-icon" aria-hidden="true"><i class="devicon-googlecloud-plain colored"></i></div>
@@ -562,7 +648,73 @@
             </div>
           </div>
 
-          <!-- MuleSoft Anypoint -->
+          <!-- Docker & Contenedores -->
+          <div class="skill-card" data-category="servers">
+            <div class="skill-card-top">
+              <div class="skill-badge-icon" aria-hidden="true"><i class="devicon-docker-plain colored"></i></div>
+              <div>
+                <h3 class="skill-name">Docker & Contenedores</h3>
+                <div class="skill-category-tag">Containerization & Compose</div>
+              </div>
+            </div>
+            <div class="tags-container">
+              <span class="tech-tag">Dockerfiles</span>
+              <span class="tech-tag">Docker Compose</span>
+              <span class="tech-tag">Redes & Volúmenes</span>
+            </div>
+          </div>
+
+          <!-- JBoss EAP & JBoss Fuse -->
+          <div class="skill-card" data-category="middleware">
+            <div class="skill-card-top">
+              <div class="skill-badge-icon" aria-hidden="true"><i class="devicon-redhat-plain colored"></i></div>
+              <div>
+                <h3 class="skill-name">JBoss EAP & JBoss Fuse</h3>
+                <div class="skill-category-tag">Enterprise Application Servers</div>
+              </div>
+            </div>
+            <div class="tags-container">
+              <span class="tech-tag">JBoss EAP Runtime</span>
+              <span class="tech-tag">Red Hat JBoss Fuse</span>
+              <span class="tech-tag">OSGi Bundles</span>
+              <span class="tech-tag">Despliegue WAR/EAR</span>
+            </div>
+          </div>
+
+          <!-- Apache Tomcat -->
+          <div class="skill-card" data-category="middleware">
+            <div class="skill-card-top">
+              <div class="skill-badge-icon" aria-hidden="true"><i class="devicon-tomcat-line colored"></i></div>
+              <div>
+                <h3 class="skill-name">Apache Tomcat</h3>
+                <div class="skill-category-tag">Java Servlet Container</div>
+              </div>
+            </div>
+            <div class="tags-container">
+              <span class="tech-tag">Configuración server.xml</span>
+              <span class="tech-tag">Pools JDBC</span>
+              <span class="tech-tag">JVM Memory Tuning</span>
+            </div>
+          </div>
+
+          <!-- Nginx & Apache HTTP -->
+          <div class="skill-card" data-category="middleware">
+            <div class="skill-card-top">
+              <div class="skill-badge-icon" aria-hidden="true"><i class="devicon-nginx-original colored"></i></div>
+              <div>
+                <h3 class="skill-name">Nginx & Apache HTTP</h3>
+                <div class="skill-category-tag">Reverse Proxy & SSL</div>
+              </div>
+            </div>
+            <div class="tags-container">
+              <span class="tech-tag">Reverse Proxy</span>
+              <span class="tech-tag">Certificados SSL/TLS</span>
+              <span class="tech-tag">Load Balancing</span>
+              <span class="tech-tag">Upstream Routing</span>
+            </div>
+          </div>
+
+          <!-- MuleSoft Anypoint & CloudHub -->
           <div class="skill-card" data-category="middleware">
             <div class="skill-card-top">
               <div class="skill-badge-icon" aria-hidden="true"><i class="fas fa-cubes" style="color: var(--accent-blue);"></i></div>
@@ -579,20 +731,38 @@
             </div>
           </div>
 
-          <!-- Nginx / Apache / Tomcat -->
-          <div class="skill-card" data-category="middleware">
+          <!-- Zabbix, Nagios & Icinga -->
+          <div class="skill-card" data-category="monitoring">
             <div class="skill-card-top">
-              <div class="skill-badge-icon" aria-hidden="true"><i class="devicon-nginx-original colored"></i></div>
+              <div class="skill-badge-icon" aria-hidden="true"><i class="fas fa-chart-line" style="color: var(--accent-emerald);"></i></div>
               <div>
-                <h3 class="skill-name">Nginx, Apache & Tomcat</h3>
-                <div class="skill-category-tag">Reverse Proxy, SSL & Routing</div>
+                <h3 class="skill-name">Zabbix, Nagios & Icinga</h3>
+                <div class="skill-category-tag">Monitoreo de Infraestructura</div>
               </div>
             </div>
             <div class="tags-container">
-              <span class="tech-tag">Reverse Proxy</span>
-              <span class="tech-tag">Certificados SSL/TLS</span>
-              <span class="tech-tag">Load Balancing</span>
-              <span class="tech-tag">JBoss Fuse</span>
+              <span class="tech-tag">Zabbix Agentes</span>
+              <span class="tech-tag">Nagios Core / Plugins</span>
+              <span class="tech-tag">Icinga2 Alerts</span>
+              <span class="tech-tag">SNMP Polling</span>
+              <span class="tech-tag">Triggers & Escalado</span>
+            </div>
+          </div>
+
+          <!-- Datadog, Dynatrace & AppDynamics -->
+          <div class="skill-card" data-category="monitoring">
+            <div class="skill-card-top">
+              <div class="skill-badge-icon" aria-hidden="true"><i class="fas fa-network-wired" style="color: var(--accent-purple);"></i></div>
+              <div>
+                <h3 class="skill-name">Datadog, Dynatrace & AppDynamics</h3>
+                <div class="skill-category-tag">APM & Observabilidad Enterprise</div>
+              </div>
+            </div>
+            <div class="tags-container">
+              <span class="tech-tag">APM Distributed Tracing</span>
+              <span class="tech-tag">Dashboards en Tiempo Real</span>
+              <span class="tech-tag">Análisis de Cuellos de Botella</span>
+              <span class="tech-tag">Alertas Sintéticas</span>
             </div>
           </div>
 
@@ -612,7 +782,7 @@
             </div>
           </div>
 
-          <!-- PowerShell -->
+          <!-- PowerShell Scripting -->
           <div class="skill-card" data-category="dev">
             <div class="skill-card-top">
               <div class="skill-badge-icon" aria-hidden="true"><i class="devicon-powershell-plain colored"></i></div>
@@ -655,25 +825,25 @@
               </div>
             </div>
             <div class="tags-container">
-              <span class="tech-tag">Paralelismo & Threads</span>
+              <span class="tech-tag">Paralelismo & Concurrencia</span>
               <span class="tech-tag">Análisis de Disco (MFT)</span>
               <span class="tech-tag">DuckDB Integrations</span>
             </div>
           </div>
 
-          <!-- Docker -->
-          <div class="skill-card" data-category="servers">
+          <!-- Go (Golang) -->
+          <div class="skill-card" data-category="dev">
             <div class="skill-card-top">
-              <div class="skill-badge-icon" aria-hidden="true"><i class="devicon-docker-plain colored"></i></div>
+              <div class="skill-badge-icon" aria-hidden="true"><i class="devicon-go-original-wordmark colored"></i></div>
               <div>
-                <h3 class="skill-name">Docker & Contenedores</h3>
-                <div class="skill-category-tag">Containerization & Compose</div>
+                <h3 class="skill-name">Go (Golang)</h3>
+                <div class="skill-category-tag">Microservicios & Concurrencia</div>
               </div>
             </div>
             <div class="tags-container">
-              <span class="tech-tag">Dockerfiles</span>
-              <span class="tech-tag">Docker Compose</span>
-              <span class="tech-tag">Contenedores de Microservicios</span>
+              <span class="tech-tag">Goroutines & Canales</span>
+              <span class="tech-tag">APIs Concurrentes</span>
+              <span class="tech-tag">Binarios Ligeros</span>
             </div>
           </div>
         </div>
@@ -706,6 +876,7 @@
           <div class="project-card" data-category="cloud">
             <div class="project-badge-domain">Cloud & FinOps</div>
             <div class="project-icon-top" aria-hidden="true"><i class="fas fa-radar"></i></div>
+            <span class="project-badge-type private"><i class="fas fa-lock"></i> Código Propietario / Privado</span>
             <h3 class="project-title">MuleRadarVcore</h3>
             <p class="project-desc">
               Radar forense de vCores, capacidad y FinOps para MuleSoft Anypoint Platform. Analiza en tiempo real el consumo de recursos, proyecciones de costo y alertas de sobreutilización.
@@ -717,9 +888,9 @@
               <span class="project-tag">FinOps</span>
             </div>
             <div class="project-links">
-              <a href="https://github.com/goldengaco" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Ver código de MuleRadarVcore en GitHub">
-                <i class="fab fa-github" aria-hidden="true"></i> Ver Código en GitHub
-              </a>
+              <div class="project-private-label">
+                <i class="fas fa-shield-halved" style="color: var(--accent-cyan);"></i> Arquitectura & Operación Privada
+              </div>
             </div>
           </div>
 
@@ -727,6 +898,7 @@
           <div class="project-card" data-category="cloud">
             <div class="project-badge-domain">DevSecOps</div>
             <div class="project-icon-top" aria-hidden="true"><i class="fas fa-shield-virus"></i></div>
+            <span class="project-badge-type private"><i class="fas fa-lock"></i> Suite Privada / Enterprise</span>
             <h3 class="project-title">GCP Security Hardening Suite</h3>
             <p class="project-desc">
               Suite integral de 33 checklists de auditoría y scripts de hardening automatizados para infraestructura en Google Cloud Platform y configuración segura de proxies Envoy.
@@ -738,9 +910,9 @@
               <span class="project-tag">Envoy Proxy</span>
             </div>
             <div class="project-links">
-              <a href="https://github.com/goldengaco" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Ver código de GCP Security Hardening Suite en GitHub">
-                <i class="fab fa-github" aria-hidden="true"></i> Ver Código en GitHub
-              </a>
+              <div class="project-private-label">
+                <i class="fas fa-shield-halved" style="color: var(--accent-cyan);"></i> 33 Checklists de Auditoría
+              </div>
             </div>
           </div>
 
@@ -748,6 +920,7 @@
           <div class="project-card" data-category="dba">
             <div class="project-badge-domain">Database Engineering</div>
             <div class="project-icon-top" aria-hidden="true"><i class="fas fa-database"></i></div>
+            <span class="project-badge-type private"><i class="fas fa-lock"></i> Metodología Propietaria</span>
             <h3 class="project-title">DBA Multi-Engine Migration & Tuning</h3>
             <p class="project-desc">
               Framework y scripts de optimización de índices, tuning de queries y pipelines de migración de datos entre PostgreSQL, Microsoft SQL Server, MySQL, Informix y Netezza.
@@ -755,13 +928,13 @@
             <div class="project-tags">
               <span class="project-tag">PostgreSQL</span>
               <span class="project-tag">SQL Server</span>
-              <span class="project-tag">ETL</span>
+              <span class="project-tag">Informix</span>
               <span class="project-tag">Query Tuning</span>
             </div>
             <div class="project-links">
-              <a href="https://github.com/goldengaco" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Ver arquitectura y métricas de optimización de bases de datos en GitHub">
-                <i class="fas fa-chart-line" aria-hidden="true"></i> Métricas & Arquitectura
-              </a>
+              <div class="project-private-label">
+                <i class="fas fa-chart-line" style="color: var(--accent-cyan);"></i> Framework de Afinación de Queries
+              </div>
             </div>
           </div>
 
@@ -769,6 +942,7 @@
           <div class="project-card" data-category="cloud">
             <div class="project-badge-domain">Networking Forensics</div>
             <div class="project-icon-top" aria-hidden="true"><i class="fas fa-network-wired"></i></div>
+            <span class="project-badge-type private"><i class="fas fa-lock"></i> Toolkit Privado</span>
             <h3 class="project-title">MuleSoft CloudHub Net-Tools</h3>
             <p class="project-desc">
               Conjunto de 33 herramientas forenses embebidas en Java y Flask para pruebas de resolución DNS, trazabilidad de rutas y validación de conectividad segura en VPCs.
@@ -780,9 +954,9 @@
               <span class="project-tag">DNS/TCP</span>
             </div>
             <div class="project-links">
-              <a href="https://github.com/goldengaco" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Ver repositorio de MuleSoft Net-Tools en GitHub">
-                <i class="fab fa-github" aria-hidden="true"></i> Ver Repositorio
-              </a>
+              <div class="project-private-label">
+                <i class="fas fa-network-wired" style="color: var(--accent-cyan);"></i> Diagnóstico Forense de VPC
+              </div>
             </div>
           </div>
 
@@ -790,6 +964,7 @@
           <div class="project-card" data-category="automation">
             <div class="project-badge-domain">High Performance</div>
             <div class="project-icon-top" aria-hidden="true"><i class="fas fa-microchip"></i></div>
+            <span class="project-badge-type private"><i class="fas fa-lock"></i> Software Privado</span>
             <h3 class="project-title">MarketRadar & VivyDisk (Rust Suite)</h3>
             <p class="project-desc">
               Analizadores de ultra alto rendimiento en Rust con DuckDB y Canvas para procesamiento masivo de datos en paralelo y lectura de estructuras complejas a nivel de disco.
@@ -801,9 +976,9 @@
               <span class="project-tag">FastAPI</span>
             </div>
             <div class="project-links">
-              <a href="https://github.com/goldengaco" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Ver código de la suite de Rust en GitHub">
-                <i class="fab fa-github" aria-hidden="true"></i> Ver Código
-              </a>
+              <div class="project-private-label">
+                <i class="fas fa-microchip" style="color: var(--accent-cyan);"></i> Motor Concurrente en Rust
+              </div>
             </div>
           </div>
 
@@ -811,6 +986,7 @@
           <div class="project-card" data-category="web">
             <div class="project-badge-domain">Interactive Web</div>
             <div class="project-icon-top" aria-hidden="true"><i class="fas fa-rocket"></i></div>
+            <span class="project-badge-type public"><i class="fas fa-globe"></i> Open Source / Demo Pública</span>
             <h3 class="project-title">SpaceX Missions Tracker (Platzi)</h3>
             <p class="project-desc">
               Aplicación interactiva y responsiva para el seguimiento y visualización de lanzamientos, cohetes y telemetría de misiones espaciales consumiendo APIs en tiempo real.

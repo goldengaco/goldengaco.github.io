@@ -166,11 +166,12 @@ function initInteractiveTerminal() {
     about: () => terminalCommands.whoami(),
 
     skills: () => `
-<div class="terminal-line"><span style="color: #00e5ff;">=== STACK TÉCNICO ===</span></div>
-<div class="terminal-line"><span style="color: #38bdf8;">[Servidores & Cloud]:</span> Linux (RHEL, Ubuntu, Debian), Windows Server, GCP, MuleSoft CloudHub, Envoy, Nginx, Apache, Tomcat, JBoss.</div>
-<div class="terminal-line"><span style="color: #38bdf8;">[Bases de Datos]:</span> PostgreSQL, MS SQL Server, MySQL, IBM Informix, IBM Netezza, SQLite, DuckDB, Tuning & Query Optimization.</div>
-<div class="terminal-line"><span style="color: #38bdf8;">[Scripting & Dev]:</span> Bash, PowerShell, Python, Rust, FastAPI, Svelte, React, JavaScript.</div>
-<div class="terminal-line"><span style="color: #38bdf8;">[DevSecOps & Ops]:</span> Hardening GCP, Forense de Logs, Monitoreo, DRP, Gestión de vCores y FinOps.</div>`,
+<div class="terminal-line"><span style="color: #00e5ff;">=== STACK TÉCNICO COMPLETO ===</span></div>
+<div class="terminal-line"><span style="color: #38bdf8;">[Bases de Datos]:</span> PostgreSQL, MS SQL Server, IBM Informix, IBM Netezza, MongoDB, MySQL, MariaDB, SQLite, DuckDB.</div>
+<div class="terminal-line"><span style="color: #38bdf8;">[Servidores & SO]:</span> Linux (RHEL, CentOS, Debian, Ubuntu, Slackware, Pop!_OS), Windows Server (AD, IIS), GCP, Docker.</div>
+<div class="terminal-line"><span style="color: #38bdf8;">[Middleware]:</span> JBoss EAP, JBoss Fuse, Apache Tomcat, Nginx, Apache HTTP, MuleSoft Runtime & CloudHub.</div>
+<div class="terminal-line"><span style="color: #38bdf8;">[Monitoreo & APM]:</span> Zabbix, Nagios, Icinga, Datadog, AppDynamics, Dynatrace.</div>
+<div class="terminal-line"><span style="color: #38bdf8;">[Lenguajes & Dev]:</span> Bash, PowerShell, Python (FastAPI/ETL), Rust, Go (Golang), JavaScript.</div>`,
 
     projects: () => `
 <div class="terminal-line"><span style="color: #00e5ff;">=== PROYECTOS DESTACADOS ===</span></div>
