@@ -1,9 +1,9 @@
 /**
- * Carlos García Portfolio - High-Performance Service Worker (PWA Offline & Cache Engine)
- * Version: v2.0.0
+ * Carlos Javier García Contreras Portfolio - High-Performance Service Worker
+ * Version: v2.2.0
  */
 
-const CACHE_NAME = 'carlos-portfolio-v2.0.0';
+const CACHE_NAME = 'carlos-portfolio-v2.2.0';
 const STATIC_ASSETS = [
   '/',
   '/index.html',

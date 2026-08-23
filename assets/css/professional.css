@@ -32,7 +32,7 @@
   /* Text Colors */
   --text-main: #f8fafc;
   --text-muted: #94a3b8;
-  --text-dim: #64748b;
+  --text-dim: #94a3b8;
   --text-highlight: #38bdf8;
 
   /* Typography */
@@ -881,7 +881,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .skill-category-tag {
   font-size: 0.75rem;
-  color: var(--text-dim);
+  color: var(--accent-blue);
+  font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }

@@ -1,26 +1,32 @@
-# Carlos García - Senior Infrastructure, DBA & Cloud Engineer
+# Carlos Javier García Contreras — Senior Infrastructure & DBA Engineer
 
-> Portfolio and technical profile of Carlos Javier García Contreras (goldengaco).
+> Professional technical portfolio and AI-agent context file for Carlos Javier García Contreras.
+
+- [Inicio](https://goldengaco.github.io/): Portafolio principal y resumen ejecutivo
+- [Especialidades](https://goldengaco.github.io/#especialidades): Pilares de arquitectura de servidores, bases de datos y cloud
+- [Habilidades](https://goldengaco.github.io/#habilidades): Arsenal tecnológico completo (PostgreSQL, SQL Server, Informix, Netezza, Yellowbrick, Linux, GCP, AWS)
+- [Proyectos](https://goldengaco.github.io/#proyectos): Proyectos de ingeniería forense, DWH y optimización
+- [Certificaciones](https://goldengaco.github.io/#certificaciones): Credenciales y certificaciones técnicas verificadas
+- [Trayectoria](https://goldengaco.github.io/#experiencia): Historial profesional y soporte a entornos de misión crítica
+- [Contacto](https://goldengaco.github.io/#contacto): Canales de contacto profesional y redes
 
 ## Summary
-Carlos García is a Senior Systems Administrator, Database Administrator (DBA), and Cloud/DevSecOps Engineer with over 7 years of experience in enterprise infrastructure, high availability (HA), disaster recovery (DRP), and system automation.
+Carlos Javier García Contreras is a Senior Systems Administrator, Database Administrator (DBA), and Cloud/DevSecOps Engineer with extensive experience in enterprise infrastructure, high availability (HA), disaster recovery (DRP), multi-engine database tuning, and system automation.
 
 ## Core Technical Skills
-- **Operating Systems & Cloud**: Linux (RHEL, Ubuntu, Debian), Windows Server, Google Cloud Platform (GCP), MuleSoft CloudHub, Docker.
-- **Database Administration (DBA)**: PostgreSQL, Microsoft SQL Server, MySQL, MariaDB, IBM Informix, IBM Netezza, SQLite, DuckDB. Performance tuning, query optimization, indexing strategies, heterogeneous database migrations, backup and recovery.
-- **Middleware & Networking**: Nginx, Apache HTTP Server, Apache Tomcat, JBoss Fuse, Envoy Proxy, DNS diagnostics, VPC security.
-- **Automation & Scripting**: Bash, PowerShell, Python (FastAPI, ETL, Forensics), Rust, JavaScript/TypeScript.
-- **Security & DevSecOps**: GCP Hardening, audit checklists, log forensics, compliance, InvGate, Zabbix, monitoring.
+- [Bases de Datos & Data Warehousing](https://goldengaco.github.io/#habilidades): PostgreSQL, Microsoft SQL Server, IBM Informix, IBM Netezza, Yellowbrick Data Warehouse, MongoDB, MySQL, MariaDB, SQLite, DuckDB.
+- [Servidores & Cloud](https://goldengaco.github.io/#habilidades): Linux (RHEL, CentOS, Fedora, Debian, Ubuntu, Slackware, Pop!_OS), Windows Server (Active Directory, IIS), Google Cloud Platform (GCP), Amazon Web Services (AWS EC2, S3, Logs), Docker.
+- [Middleware & Observabilidad](https://goldengaco.github.io/#habilidades): JBoss EAP, JBoss Fuse, Apache Tomcat, Nginx, Apache HTTP, MuleSoft Runtime & CloudHub, Zabbix, Nagios, Icinga, Datadog, AppDynamics, Dynatrace.
+- [Scripting & Automatización](https://goldengaco.github.io/#habilidades): Bash, PowerShell, Python (FastAPI/ETL), Rust, Go (Golang), JavaScript.
 
 ## Featured Projects
-- **MuleRadarVcore**: Forensic vCores, capacity and FinOps radar for MuleSoft Anypoint Platform.
-- **GCP Security Hardening Suite**: 33 automated audit checklists and hardening scripts for GCP infrastructure.
-- **DBA Multi-Engine Migration Framework**: Zero-downtime and consistent cross-engine data migration tooling.
-- **MuleSoft CloudHub Net-Tools**: Diagnostic forensics suite for network and DNS validation.
-- **MarketRadar & VivyDisk**: Parallel high-throughput data and disk analysis engines built in Rust and DuckDB.
+- [MuleRadarVcore](https://goldengaco.github.io/#proyectos): Forensic vCores, capacity and FinOps radar for MuleSoft Anypoint Platform.
+- [GCP Security Hardening Suite](https://goldengaco.github.io/#proyectos): 33 automated audit checklists and hardening scripts for GCP infrastructure.
+- [DBA Multi-Engine Migration Framework](https://goldengaco.github.io/#proyectos): Performance tuning, query plans and heterogeneous data migrations.
+- [MuleSoft CloudHub Net-Tools](https://goldengaco.github.io/#proyectos): Diagnostic forensics suite for network and DNS validation.
+- [MarketRadar & VivyDisk](https://goldengaco.github.io/#proyectos): Parallel high-throughput data analysis engines built in Rust and DuckDB.
 
 ## Contact Information
-- **Email**: carlosjgarciac@gmail.com
-- **LinkedIn**: https://www.linkedin.com/in/carlosjgarciac
-- **GitHub**: https://github.com/goldengaco
-- **Website**: https://goldengaco.github.io/
+- [Email](mailto:carlosjgarciac@gmail.com): carlosjgarciac@gmail.com
+- [LinkedIn](https://www.linkedin.com/in/carlosjgarciac): Perfil profesional oficial
+- [GitHub](https://github.com/goldengaco): Repositorio de código y proyectos
