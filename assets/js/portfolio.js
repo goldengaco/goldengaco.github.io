@@ -202,12 +202,14 @@ function initInteractiveTerminal() {
 <div class="terminal-line">Status: <span style="color: #10b981; font-weight: bold;">ALL SYSTEMS OPERATIONAL (99.99%)</span></div>`,
 
     certs: () => `
-<div class="terminal-line"><span style="color: #00e5ff;">=== CERTIFICACIONES & CREDENCIALES ===</span></div>
-<div class="terminal-line">• <span style="color: #38bdf8; font-weight: bold;">Google Cloud Platform (GCP) Infrastructure & Security</span></div>
-<div class="terminal-line">• <span style="color: #38bdf8; font-weight: bold;">Linux System Administration (RHEL / Debian)</span></div>
-<div class="terminal-line">• <span style="color: #38bdf8; font-weight: bold;">PostgreSQL DBA Enterprise & Performance Tuning</span></div>
-<div class="terminal-line">• <span style="color: #38bdf8; font-weight: bold;">MuleSoft Anypoint Platform Operations</span></div>
-<div class="terminal-line"><em>Explora la sección visual de Certificaciones en la página para más detalles.</em></div>`,
+<div class="terminal-line"><span style="color: #00e5ff;">=== CERTIFICACIONES & CREDENCIALES VERIFICADAS ===</span></div>
+<div class="terminal-line">1. <span style="color: #38bdf8; font-weight: bold;">Google Cloud Platform (GCP)</span>: Desarrollo y Despliegue en la Nube (Platzi Verificado).</div>
+<div class="terminal-line">2. <span style="color: #38bdf8; font-weight: bold;">AWS IAM & Cloud Computing</span>: Roles, Seguridad y Políticas de Acceso (Platzi Verificado).</div>
+<div class="terminal-line">3. <span style="color: #38bdf8; font-weight: bold;">Linux Servidores</span>: Administración de Servidores Linux & Manejo de Recursos (Platzi Verificado).</div>
+<div class="terminal-line">4. <span style="color: #38bdf8; font-weight: bold;">Git & GitHub</span>: Flujos Profesionales de Control de Versiones & CI/CD (Platzi Verificado).</div>
+<div class="terminal-line">5. <span style="color: #38bdf8; font-weight: bold;">PostgreSQL Enterprise DBA</span>: Query Tuning, Replicación Streaming y DRP.</div>
+<div class="terminal-line">6. <span style="color: #38bdf8; font-weight: bold;">MuleSoft Anypoint Platform</span>: CloudHub Operations & FinOps vCores.</div>
+<div class="terminal-line"><em>Visita la sección de Certificaciones en la página para enlaces directos a las credenciales oficiales.</em></div>`,
 
     certificaciones: () => terminalCommands.certs(),
 
