@@ -211,7 +211,7 @@ function initInteractiveTerminal() {
 
     certificaciones: () => terminalCommands.certs(),
 
-    uname: () => `<div class="terminal-line"><span style="color: #38bdf8;">Linux devops-node 7.1.9-hardened #1 SMP PREEMPT_DYNAMIC x86_64 GNU/Linux</span></div>`,
+    uname: () => `<div class="terminal-line"><span style="color: #38bdf8;">Linux devops-node 7.2.2-hardened #1 SMP PREEMPT_DYNAMIC x86_64 GNU/Linux</span></div>`,
     
     'uname -a': () => terminalCommands.uname(),
 
