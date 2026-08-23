@@ -211,6 +211,10 @@ function initInteractiveTerminal() {
 
     certificaciones: () => terminalCommands.certs(),
 
+    uname: () => `<div class="terminal-line"><span style="color: #38bdf8;">Linux devops-node 7.1.9-hardened #1 SMP PREEMPT_DYNAMIC x86_64 GNU/Linux</span></div>`,
+    
+    'uname -a': () => terminalCommands.uname(),
+
     sudo: () => `<div class="terminal-line" style="color: #f43f5e;">carlos is already in sudoers file. Incident reported to Santa Claus 🎅.</div>`,
     
     clear: () => {
