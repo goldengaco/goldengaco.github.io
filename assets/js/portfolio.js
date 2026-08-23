@@ -167,8 +167,8 @@ function initInteractiveTerminal() {
 
     skills: () => `
 <div class="terminal-line"><span style="color: #00e5ff;">=== STACK TÉCNICO COMPLETO ===</span></div>
-<div class="terminal-line"><span style="color: #38bdf8;">[Bases de Datos]:</span> PostgreSQL, MS SQL Server, IBM Informix, IBM Netezza, MongoDB, MySQL, MariaDB, SQLite, DuckDB.</div>
-<div class="terminal-line"><span style="color: #38bdf8;">[Servidores & SO]:</span> Linux (RHEL, CentOS, Debian, Ubuntu, Slackware, Pop!_OS), Windows Server (AD, IIS), GCP, Docker.</div>
+<div class="terminal-line"><span style="color: #38bdf8;">[Bases de Datos & DWH]:</span> PostgreSQL, MS SQL Server, IBM Informix, IBM Netezza, Yellowbrick Data Warehouse, MongoDB, MySQL, MariaDB, SQLite, DuckDB.</div>
+<div class="terminal-line"><span style="color: #38bdf8;">[Servidores, Cloud & SO]:</span> Linux (RHEL, CentOS, Fedora, Debian, Ubuntu, Slackware, Pop!_OS), Windows Server, GCP, AWS (EC2/S3/Logs), Docker.</div>
 <div class="terminal-line"><span style="color: #38bdf8;">[Middleware]:</span> JBoss EAP, JBoss Fuse, Apache Tomcat, Nginx, Apache HTTP, MuleSoft Runtime & CloudHub.</div>
 <div class="terminal-line"><span style="color: #38bdf8;">[Monitoreo & APM]:</span> Zabbix, Nagios, Icinga, Datadog, AppDynamics, Dynatrace.</div>
 <div class="terminal-line"><span style="color: #38bdf8;">[Lenguajes & Dev]:</span> Bash, PowerShell, Python (FastAPI/ETL), Rust, Go (Golang), JavaScript.</div>`,
